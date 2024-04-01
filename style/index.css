@@ -161,6 +161,27 @@
     border: none;
 }
 
+@media(max-width: 700px) {
+    .cabecalho .campo {
+        flex-direction: column;
+        gap: 30px 0px;
+    }
+
+    .cabecalho .campo [type="text"],
+    .cabecalho .campo [type="number"] {
+        width: 100%;
+    
+    }
+}
+
+@media(max-width: 350px) {
+    .cabecalho .campo [type="text"]::placeholder,
+    .cabecalho .campo [type="number"]::placeholder{
+        font-size: 0.9em;   
+    }
+}
+
+
 
 
 
